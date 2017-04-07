@@ -19,7 +19,8 @@ module Fog
 	    "firewall" => firewall_name
           }
           body_object = {
-            "allowed" => allowed
+            "allowed" => allowed,
+	    "network" => network
           }
           unless options[:description].nil?
             body_object["description"] = options[:description]
